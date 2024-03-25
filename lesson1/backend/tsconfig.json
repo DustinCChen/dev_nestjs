@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "isolatedModules": true,
+    "lib": [
+      "ESNext"
+    ],
+    "module": "CommonJS",//使用 ES 模块
+    "moduleResolution": "node",//解析模块路径。
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ESNext",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "strict": true,
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules", 
+    "dist"
+  ],
+}
