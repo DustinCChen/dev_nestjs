@@ -1,6 +1,0 @@
-{
-	"dependencies": {
-		"chalk": "^5.3.0",
-		"@types/chalk": "^2.2.0"
-	}
-}

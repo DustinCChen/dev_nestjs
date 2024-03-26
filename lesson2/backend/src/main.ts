@@ -21,6 +21,7 @@ async function bootstrap_local() {
   );
  // 监听本地地址
  await app.listen(port, localIp, () => {
+  // console.log(chalk.blue.bold(`Server is running locally on http://${localIp}:${port}.`));
   console.log(`Server is running locally on http://${localIp}:${port}.`);
 });
 }
@@ -33,6 +34,7 @@ async function bootstrap_public() {
 // 如果有指定公网 IP 地址，则同时监听公网 IP 地址
 if (publicIp) {
   await app.listen(port, publicIp, () => {
+    // console.log(chalk.green.bold(`Server is running on public IP http://${publicIp}:${port}.`));
     console.log(`Server is running on public IP http://${publicIp}:${port}.`);
   });
 }
