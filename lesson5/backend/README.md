@@ -5,11 +5,23 @@ Pipes have two typical use cases:
 # Request payloads
 * Our previous example of the POST route handler didn't accept any client params. Let's fix this by adding the @Body() decorator here.
 * we need to determine the DTO (Data Transfer Object) schema. A DTO is an object that defines how the data will be sent over the network.
+# prisma docs
+* https://www.prisma.io/docs/getting-started/quickstart
+
 * 
 # nest cli
 ```sh
 pnpm install
 pnpx prisma init
+# pnpx prisma migrate dev/push/deploy
+pnpx prisma migrate dev --name init 
+pnpx prisma generate
+pnpx prisma migrate dev --name name_change 
+
+./node_moduels/.bin/nest g module database
+./node_moduels/.bin/nest g service database
+./node_moduels/.bin/nest g resource employees
+
 ```
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
